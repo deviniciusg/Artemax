@@ -1,0 +1,7 @@
+CATALOGO ARTEMAX.pdf
+*.zip
+*.mp4
+*.mov
+.env
+node_modules/
+.vscode/
