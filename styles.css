@@ -583,6 +583,34 @@ h2 em {
   margin: 0;
 }
 
+  .pcd-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+  }
+
+  .pcd-text {
+    flex: 1;
+  }
+
+  .pcd-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pcd-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+
+
 /* ==========================================
    9. CONTATO E FORMULÁRIOS
    ========================================== */
@@ -1067,3 +1095,14 @@ h2 em {
 
 
 
+  /* Responsividade: empilha em telas menores */
+  @media (max-width: 900px) {
+    .pcd-content {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .pcd-image {
+      width: 100%;
+    }
+  }
