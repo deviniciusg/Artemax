@@ -19,20 +19,18 @@
   --body: 'Manrope', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: inherit;
 }
 
 body {
   margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--body);
+  background: #f4f5fb;  
+  color: #121522;  
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;  
   font-size: 15px;
+  line-height: 1.5;
 }
 
 a {
@@ -73,7 +71,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 800;
-  color: var(--red);
+  color: #6841c6;
   margin: 0 0 28px;
 }
 
@@ -88,7 +86,7 @@ img {
 .eyebrow span {
   width: 27px;
   height: 2px;
-  background: var(--red);
+  background: #6841c6;
   display: inline-block;
   vertical-align: middle;
   margin-right: 9px;
@@ -99,7 +97,7 @@ img {
   align-items: center;
   padding: 16px 20px;
   border: 0;
-  font-family: var(--body);
+  font-family: 'Manrope', sans-serif;
   font-size: 11px;
   font-weight: 800;
   cursor: pointer;
@@ -111,7 +109,7 @@ img {
 }
 
 .button-red {
-  background: linear-gradient(110deg, var(--violet), var(--blue));
+  background: linear-gradient(110deg, #6841c6, #1687e8);
   color: #fff;
 }
 
@@ -121,24 +119,24 @@ img {
 }
 
 .text-link span {
-  color: var(--blue);
+  color: #1687e8;
   font-size: 18px;
   margin-left: 9px;
 }
 
 .arrow-link {
-  color: var(--ink);
+  color: #121522;
   font-size: 11px;
   font-weight: 800;
   display: inline-block;
   margin-top: 18px;
-  border-bottom: 2px solid var(--red);
+  border-bottom: 2px solid #6841c6;
   padding-bottom: 7px;
 }
 
 .arrow-link span {
   margin-left: 26px;
-  color: var(--red);
+  color: #6841c6;
   font-size: 16px;
 }
 
@@ -152,12 +150,12 @@ img {
   right: 0;
   z-index: 10;
   height: 82px;
-  padding: 0 6%;
+  padding: 0 6%;  
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--section-white);
-  border-bottom: 2px solid var(--line);
+  background: #ffffff;
+  border-bottom: 2px solid #d8dbe7;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
@@ -172,7 +170,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: clamp(18px, 3vw, 50px);
+  gap: 24px;
   font-size: 12px;
   font-weight: 700;
 }
@@ -183,12 +181,12 @@ img {
 }
 
 .main-nav a:hover,
-.main-nav a.active {
-  color: var(--violet);
+.main-nav .active {
+  color: #6841c6;
 }
 
 .main-nav .nav-contact {
-  background: var(--ink);
+  background: #121522;
   color: #fff;
   padding: 13px 17px;
 }
@@ -208,17 +206,18 @@ img {
    4. HERO SECTION
    ========================================== */
 .hero {
+  padding-top: 82px;
   min-height: 650px;
   display: grid;
   grid-template-columns: 48% 52%;
   position: relative;
   overflow: hidden;
-  background: var(--section-light);
-  border-bottom: 1px solid var(--line);
+  background: #f8f9fd;
+  border-bottom: 1px solid #d8dbe7;
 }
 
 .hero-copy {
-  padding: clamp(85px, 11vw, 150px) 8vw 70px 11vw;
+  padding: 75px 11% 65px;
   position: relative;
   z-index: 1;
 }
@@ -226,8 +225,8 @@ img {
 .hero h1,
 h2 {
   word-break: break-word;
-  font-family: var(--display);
-  font-size: clamp(48px, 8vw, 80px);
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 60px;
   line-height: 0.84;
   font-weight: 400;
   letter-spacing: 0;
@@ -243,13 +242,13 @@ h2 {
 h2 em {
   word-break: break-word;
   font-style: normal;
-  color: var(--red);
+  color: #6841c6;
 }
 
 .hero-text {
   max-width: 400px;
   line-height: 1.7;
-  color: var(--muted);
+  color: #5e6472;
   margin: 31px 0;
 }
 
@@ -277,7 +276,10 @@ h2 em {
 .hero-image:after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(120deg, rgba(63, 98, 223, 0.12), rgba(104, 65, 198, 0.4));
   mix-blend-mode: multiply;
 }
@@ -287,7 +289,7 @@ h2 em {
   z-index: 2;
   left: 8%;
   top: 13%;
-  font-family: var(--display);
+  font-family: 'Bebas Neue', Impact, sans-serif;
   font-size: 40px;
   line-height: 0.9;
   color: #fff;
@@ -303,7 +305,7 @@ h2 em {
   z-index: 2;
   right: 8%;
   bottom: 11%;
-  font-family: var(--display);
+  font-family: 'Bebas Neue', Impact, sans-serif;
   font-size: 45px;
   line-height: 0.7;
   color: #9d83f3;
@@ -311,7 +313,7 @@ h2 em {
 }
 
 .hero-stamp small {
-  font: 800 8px var(--body);
+  font: 800 8px 'Manrope', sans-serif;
   letter-spacing: 1px;
   color: #fff;
 }
@@ -328,7 +330,7 @@ h2 em {
 }
 
 .hero-side-note span {
-  color: var(--blue);
+  color: #1687e8;
   font-size: 16px;
 }
 
@@ -336,13 +338,13 @@ h2 em {
    5. PROOF BAR
    ========================================== */
 .proof-bar {
-  background: linear-gradient(110deg, var(--violet), var(--blue));
+  background: linear-gradient(110deg, #6841c6, #1687e8);
   color: #fff;
   padding: 28px 11%;
   display: flex;
-  gap: clamp(30px, 7vw, 115px);
+  gap: 28px;
   align-items: center;
-  border-bottom: 4px solid var(--section-white);
+  border-bottom: 4px solid #ffffff;
 }
 
 .proof-bar div {
@@ -352,7 +354,7 @@ h2 em {
 }
 
 .proof-bar strong {
-  font: 50px var(--display);
+  font: 50px 'Bebas Neue', Impact, sans-serif;
   font-weight: 400;
 }
 
@@ -364,28 +366,28 @@ h2 em {
 
 .proof-bar p {
   margin-left: auto;
-  font: 28px / 0.85 var(--display);
+  font: 28px / 0.85 'Bebas Neue', Impact, sans-serif;
   text-align: right;
 }
 
 .proof-bar p b {
   font-weight: 400;
-  color: var(--lavender);
+  color: #dcd5ff;
 }
 
 /* ==========================================
    6. ABOUT SECTION
    ========================================== */
 .about {
-  background: var(--section-white);
-  border-bottom: 1px solid var(--line);
+  background: #ffffff;
+  border-bottom: 1px solid #d8dbe7;
 }
 
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10%;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .about h2 {
@@ -396,7 +398,7 @@ h2 em {
 .about-description {
   max-width: 420px;
   padding-bottom: 5px;
-  color: var(--muted);
+  color: #5e6472;
   line-height: 1.7;
 }
 
@@ -408,7 +410,7 @@ h2 em {
    7. PRODUTOS E CARDS (FUNDO 100% BRANCO)
    ========================================== */
 .products {
-  background: var(--section-alt);
+  background: #edf1fb;
   border-bottom: 1px solid #cfd6e7;
 }
 
@@ -421,7 +423,7 @@ h2 em {
 }
 
 .section-heading > p {
-  color: var(--muted);
+  color: #5e6472;
   font-size: 13px;
   margin-bottom: 6px;
 }
@@ -451,24 +453,30 @@ h2 em {
 .product-card-visual {
   width: 100%;
   height: 320px;
-  background: #ffffff; /* Garante que a área da foto fique branca pura */
+  background: #ffffff;
   padding: 20px;
+  box-sizing: border-box; /* Garante que o padding não estufe as dimensões */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: none; /* Remove qualquer linha divisória cinza */
+  overflow: hidden; /* Corta qualquer escape lateral ou zoom do hover */
 }
 
 .product-card-img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  transition: transform 0.3s;
-  border-radius: 12px; /* Adiciona borda arredondada para imagens quadradas */
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  display: block;
 }
 
 .is-square {
-  object-fit: cover;        
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .product-card:hover .product-card-img {
@@ -486,12 +494,12 @@ h2 em {
 .product-info h3 {
   font-size: 18px;
   margin: 0 0 10px;
-  color: var(--ink);
+  color: #121522;
 }
 
 .product-info p {
   font-size: 13px;
-  color: var(--muted);
+  color: #5e6472;
   line-height: 1.6;
   margin: 0;
 }
@@ -526,9 +534,9 @@ h2 em {
    8. SERVIÇOS
    ========================================== */
 .services {
-  background: var(--ink);
+  background: #121522;
   color: #fff;
-  border-bottom: 4px solid var(--blue);
+  border-bottom: 4px solid #1687e8;
 }
 
 .services-inner {
@@ -543,7 +551,7 @@ h2 em {
 }
 
 .services h2 {
-  font-size: clamp(65px, 7vw, 80px);
+  font-size: 60px;
 }
 
 .service-list > div {
@@ -580,7 +588,7 @@ h2 em {
    ========================================== */
 .contact {
   padding-bottom: 120px;
-  background: var(--section-contact);
+  background: #e5ebf8;
   border-bottom: 1px solid #cbd4e6;
 }
 
@@ -591,11 +599,11 @@ h2 em {
 }
 
 .contact h2 {
-  font-size: clamp(66px, 7vw, 80px);
+  font-size: 60px;
 }
 
 .contact > .contact-grid > div > p {
-  color: var(--muted);
+  color: #5e6472;
   max-width: 370px;
   line-height: 1.7;
   margin: 28px 0 45px;
@@ -615,14 +623,14 @@ h2 em {
 .contact-detail a {
   font-size: 13px;
   font-weight: 700;
-  border-bottom: 1px solid var(--red);
+  border-bottom: 1px solid #6841c6;
 }
 
 .contact-form {
   background: rgba(255, 255, 255, 0.72);
   padding: 35px 32px 32px;
   border: 1px solid #cbd4e6;
-  border-top: 3px solid var(--violet);
+  border-top: 3px solid #6841c6;
   box-shadow: 0 10px 28px rgba(40, 55, 95, 0.08);
 }
 
@@ -631,7 +639,7 @@ h2 em {
   color: #888;
   font-size: 10px;
   padding: 19px 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid #d8dbe7;
 }
 
 .contact-form input,
@@ -641,10 +649,10 @@ h2 em {
   border: 0;
   background: none;
   padding: 11px 0 0;
-  font: 13px var(--body);
+  font: 13px 'Manrope', sans-serif;
   outline: 0;
   resize: vertical;
-  color: var(--ink);
+  color: #121522;
 }
 
 .contact-form button {
@@ -653,7 +661,7 @@ h2 em {
 
 .form-feedback {
   font-size: 11px;
-  color: var(--red);
+  color: #6841c6;
   margin-top: 15px;
 }
 
@@ -690,7 +698,7 @@ h2 em {
    11. RODAPÉ (FOOTER)
    ========================================== */
 .site-footer {
-  background: linear-gradient(110deg, var(--violet), var(--blue));
+  background: linear-gradient(110deg, #6841c6, #1687e8);
   padding: 30px 11%;
   color: #fff;
   display: flex;
@@ -768,7 +776,7 @@ h2 em {
 
 .button-footer-wa {
   background: #ffffff;
-  color: var(--violet);
+  color: #6841c6;
   font-weight: 700;
   font-size: 13px;
   padding: 12px 20px;
@@ -817,7 +825,7 @@ h2 em {
 
 .social-links a:hover {
   background: #ffffff;
-  color: var(--violet);
+  color: #6841c6;
   transform: translateY(-3px);
 }
 
@@ -843,7 +851,7 @@ h2 em {
   /* Layout Global e Cabeçalho */
   .site-header {
     height: 68px;
-    padding: 0 6%;
+    padding: 0 6%;    
   }
 
   .brand img {
@@ -863,7 +871,7 @@ h2 em {
     display: block;
     width: 25px;
     height: 2px;
-    background: var(--ink);
+    background: #121522;
   }
 
   .main-nav {
@@ -872,12 +880,12 @@ h2 em {
     top: 68px;
     left: 0;
     right: 0;
-    background: var(--paper);
+    background: #f4f5fb;
     padding: 20px 6%;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid #d8dbe7;
   }
 
   .main-nav.open {
@@ -890,6 +898,7 @@ h2 em {
 
   /* Hero */
   .hero {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     min-height: 0;
