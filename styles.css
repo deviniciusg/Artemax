@@ -861,13 +861,55 @@ h2 em {
   display: block;
 }
 
+.footer-container {
+  width: 100%;
+}
+
 .footer-bottom {
   width: 100%;
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
-  opacity: 0.7;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   font-size: 13px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.2s ease;
+}
+
+.footer-credit:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.hiweb-brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.hiweb-hi {
+  color: #ffffff;
+}
+
+.hiweb-web {
+  color: #00D3FC;
 }
 
 
@@ -1090,6 +1132,14 @@ h2 em {
   .site-footer {
     padding: 27px 8%;
     gap: 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 20px;
   }
 }
 
